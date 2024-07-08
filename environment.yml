@@ -1,0 +1,19 @@
+name: envpy
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.9
+  - r-base=4.0
+  - numpy
+  - matplotlib
+  - pandas
+  - plotly
+  - scikit-learn
+  - r-dplyr
+  - r-ggplot2
+  - r-reshape2
+  - r-tidyverse
+  - r-plotly
+  - r-stringr
