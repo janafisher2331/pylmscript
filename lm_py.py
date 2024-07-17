@@ -11,6 +11,11 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 import sys
 
+import matplotlib
+
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+
 # # Load Dataset
 
 # In[ ]:
@@ -25,10 +30,10 @@ df.head()
 
 # In[ ]:
 
-plt.savefig("pylm_scatter.png", format="png")
 plt.scatter(df['x'],df['y'])
 plt.xlabel("x axis")
 plt.ylabel("y axis")
+plt.savefig("pylm_scatter.png", format="png")
 
 # # Create Linear Model of Data
 
@@ -59,9 +64,8 @@ y_pred = model.predict(x)
 
 # In[ ]:
 
-plt.savefig("pylm_fit.png", format="png")
 plt.scatter(x,y)
 plt.plot(x,y_pred)
 plt.xlabel("x axis")
 plt.ylabel("y axis")
-
+plt.savefig("pylm_fit.png", format="png")
